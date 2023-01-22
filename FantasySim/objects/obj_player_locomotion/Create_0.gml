@@ -1,17 +1,20 @@
 /// @description Data Initialization
-//Movement
+
+	//Movement Speed
 crouchSpeed = 2;
 walkingSpeed = 4;
 runningSpeed = 8;
 dodgeSpeed = 18;
 maxSpeed = walkingSpeed;
 
+	//Movement Acceleration
 crouchAccel = 0.1;
 walkingAccel = 0.2;
 runningAccel = 0.6;
 dodgeAccel = 1;
 accel = walkingAccel;
 
+	//Dodge related variables - currently obsolete
 dodgeStartX = 0;
 dodgeStartY = 0;
 dodgeMouseTargetX = 0;
@@ -27,6 +30,8 @@ obj_grabbed = 0;
 objectGrabRange = 16;
 accelObjectWeightMultiplier = 0.1;
 */
+
+	//Movement related variables
 fric = 0.4;
 
 moveH = 0;
@@ -35,16 +40,19 @@ moveV = 0;
 xSpeed = 0;
 ySpeed = 0;
 
-//Collision Sprites
+xImpulse = 0;
+yImpulse = 0;
+
+	//Collision Sprites
 spr_col_stand = spr_col_player_stand;
 spr_col_crouch = spr_col_player_crouch;
 spr_col_dash = spr_col_player_dash;
 spr_collision = spr_col_stand;
 
-//Managers
+	//Managers
 state_machine_manager = undefined;
 
-//Methods
+	//Methods
 MoveHorizontally = function(var_moveH)
 {
 	moveH = var_moveH;
@@ -83,4 +91,40 @@ GetCollisionSprite = function()
 SetCollisionSprite = function(var_sprite)
 {
 	spr_collision = var_sprite;	
+}
+
+GetXImpulse = function()
+{
+	return xImpulse;
+}
+
+GetYImpulse = function()
+{
+	return yImpulse;
+}
+
+SetXImpulse = function(var_xImpulse)
+{
+	xImpulse = var_xImpulse;
+}
+
+SetYImpulse = function(var_yImpulse)
+{
+	yImpulse = var_yImpulse;
+}
+
+AddXImpulse = function(var_xSpeed)
+{
+	xImpulse += var_xSpeed;	
+}
+
+AddYImpulse = function(var_ySpeed)
+{
+	yImpulse += var_ySpeed;	
+}
+
+AddImpulse = function(var_xSpeed, var_ySpeed)
+{
+	AddXImpulse(var_xSpeed);
+	AddYImpulse(var_ySpeed);
 }

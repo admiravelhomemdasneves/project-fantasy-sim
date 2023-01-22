@@ -7,6 +7,8 @@ function scr_calculate_speed(instance_locomotion_id){
 	var speedLossOnMisdirectionRate = instance_locomotion_id.speedLossOnMisdirectionRate;
 	var accel = instance_locomotion_id.accel;
 	var fric = instance_locomotion_id.fric;
+	var xImpulse = instance_locomotion_id.xImpulse;
+	var yImpulse = instance_locomotion_id.yImpulse;
 	
 	if (moveH != 0)
 	{
@@ -47,6 +49,30 @@ function scr_calculate_speed(instance_locomotion_id){
 		else
 		{
 			instance_locomotion_id.ySpeed = 0;
+		}
+	}
+	
+	if (xImpulse != 0)
+	{
+		if (abs(xImpulse) >= fric)
+		{
+			instance_locomotion_id.xImpulse -= fric * sign(xImpulse);
+		}
+		else
+		{
+			instance_locomotion_id.xImpulse = 0;
+		}
+	}
+	
+	if (yImpulse != 0)
+	{
+		if (abs(yImpulse) >= fric)
+		{
+			instance_locomotion_id.yImpulse -= fric * sign(yImpulse);
+		}
+		else
+		{
+			instance_locomotion_id.yImpulse = 0;
 		}
 	}
 }
