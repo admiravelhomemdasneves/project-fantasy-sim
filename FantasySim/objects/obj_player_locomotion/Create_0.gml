@@ -39,6 +39,10 @@ ySpeed = 0;
 spr_col_stand = spr_col_player_stand;
 spr_col_crouch = spr_col_player_crouch;
 spr_col_dash = spr_col_player_dash;
+spr_collision = spr_col_stand;
+
+//Managers
+state_machine_manager = undefined;
 
 //Methods
 MoveHorizontally = function(var_moveH)
@@ -70,3 +74,13 @@ GetAcceleration = function()
 {
 	return accel;	
 };
+
+GetCollisionSprite = function()
+{
+	return spr_collision;	
+}
+
+SetCollisionSprite = function(var_sprite)
+{
+	spr_collision = var_sprite;	
+}

@@ -8,36 +8,26 @@ if (instance_exists(parent_manager_id)) { action_manager = parent_manager_id.Get
 switch (state)
 {
 	case STATES.IDLE:
-		scr_basic_movement_input();
-		if (locomotion_manager.moveH != 0 or locomotion_manager.moveV != 0) { state = STATES.RUN; }
+		scr_sm_state_idle();
 	break;
 	
 	case STATES.RUN:
-		if (locomotion_manager.GetMaxSpeed() != locomotion_manager.walkingSpeed)
-			{ locomotion_manager.SetMaxSpeed(locomotion_manager.walkingSpeed); }
-		scr_basic_movement_input();
-		if (input_check("special")) { state = STATES.SPRINT; }
-		if (input_check("action")) { state = STATES.CROUCH; }
-		if (locomotion_manager.moveH == 0 and locomotion_manager.moveV == 0) { state = STATES.IDLE; }
+		scr_sm_state_run();
 	break;
 	
 	case STATES.SPRINT:
-		if (locomotion_manager.GetMaxSpeed() != locomotion_manager.runningSpeed)
-			{ locomotion_manager.SetMaxSpeed(locomotion_manager.runningSpeed); }
-		scr_basic_movement_input();
-		if (!input_check("special")) { state = STATES.RUN; }
+		scr_sm_state_sprint();
 	break;
 	
 	case STATES.CROUCH:
-		if (locomotion_manager.GetMaxSpeed() != locomotion_manager.crouchSpeed)
-			{ locomotion_manager.SetMaxSpeed(locomotion_manager.crouchSpeed); }
-		scr_basic_movement_input();
-		if (!input_check("action")) { state = STATES.RUN; }
+		scr_sm_state_crouch();
 	break;
 	
 	case STATES.DODGE:
+		scr_sm_state_dodge();
 	break;
 
 	default:
+		scr_sm_state_idle();
 	break;
 }

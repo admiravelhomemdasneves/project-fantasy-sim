@@ -7,7 +7,7 @@ struct_manager_id = {
 
 player_number = instance_number(obj_player_manager);
 manager_id = "Player"+string(player_number);
-locomotion_manager = instance_create_depth(x, y, 0, obj_player_locomotion);
+locomotion_manager = instance_create_depth(x, y, 0, obj_player_locomotion, struct_manager_id);
 action_manager = instance_create_depth(x, y, 0, obj_player_action_manager, struct_manager_id);
 state_machine_manager = instance_create_depth(x, y, 0, obj_player_state_machine, struct_manager_id);
 camera_manager = instance_create_depth(x, y, 0, obj_player_camera, struct_manager_id);
