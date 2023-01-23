@@ -8,14 +8,5 @@ y += ySpeed + yImpulse;
 
 sprite_index = spr_collision;
 
-//For Testing purposes
-if input_check_pressed("accept") 
-{ 
-	if (GetXImpulse() == 0 and GetYImpulse() == 0)
-	{
-		AddImpulse(12, 12); 
-	}
-}
-
 //FOR DEBUG PURPOSES
 depth = -y+10;
