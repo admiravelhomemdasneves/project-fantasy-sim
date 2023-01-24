@@ -8,7 +8,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_collision_mask",
+    "path": "objects/obj_collision_mask/obj_collision_mask.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
