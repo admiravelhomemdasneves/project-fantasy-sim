@@ -2,9 +2,7 @@
 
 scr_calculate_speed(id);
 scr_max_speed(id);
-
-x += xSpeed + xImpulse;
-y += ySpeed + yImpulse;
+scr_collision_checking();
 
 sprite_index = spr_collision;
 
