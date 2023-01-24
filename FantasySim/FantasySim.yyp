@@ -368,6 +368,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player","folderPath":"folders/Objects/Player.yy","order":9,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"PlayerOLD","folderPath":"folders/Objects/PlayerOLD.yy","order":8,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Systems","folderPath":"folders/Objects/Systems.yy","order":7,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Collision System","folderPath":"folders/Objects/Systems/Collision System.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Input System","folderPath":"folders/Objects/Systems/Input System.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notifications","folderPath":"folders/Objects/Systems/Notifications.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Paths","folderPath":"folders/Paths.yy","order":4,},
@@ -386,7 +387,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player Collisions","folderPath":"folders/Sprites/Player Collisions.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":8,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Collision System","folderPath":"folders/Objects/Systems/Collision System.yy","order":4,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
