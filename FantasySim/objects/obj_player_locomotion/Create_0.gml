@@ -14,24 +14,8 @@ runningAccel = 0.6;
 dodgeAccel = 1;
 accel = walkingAccel;
 
-	//Dodge related variables - currently obsolete
-dodgeStartX = 0;
-dodgeStartY = 0;
-dodgeMouseTargetX = 0;
-dodgeMouseTargetY = 0;
-dodgeMoveH = 0;
-dodgeMoveV = 0;
-dodgeRange = 90;
-dodgeCountDown = 30;
-dodgeAble = true;
+	//Other Movement Variables
 speedLossOnMisdirectionRate = 4; //The lower the less speed is lost on player route misdirection (left to right/ up to down)
-/*
-obj_grabbed = 0;
-objectGrabRange = 16;
-accelObjectWeightMultiplier = 0.1;
-*/
-
-	//Movement related variables
 fric = 0.4;
 
 moveH = 0;
@@ -43,6 +27,17 @@ ySpeed = 0;
 xImpulse = 0;
 yImpulse = 0;
 
+	//Direction System
+direction_cursor_speed = 18;
+direction_target_x = 0;
+direction_target_y = 0;
+direction_target_max_distance = 128;
+input_distance_radius = 128;
+arrowDistanceToPlayer = 32;
+arrow_rot = point_direction(x,y,x+direction_target_x,y+direction_target_y);
+arrow_x = x + lengthdir_x(arrowDistanceToPlayer, arrow_rot);
+arrow_y = y + lengthdir_y(arrowDistanceToPlayer,arrow_rot);
+
 	//Collision Sprites
 spr_col_stand = spr_col_player_stand;
 spr_col_crouch = spr_col_player_crouch;
@@ -53,6 +48,16 @@ spr_collision = spr_col_stand;
 state_machine_manager = undefined;
 
 	//Methods
+GetDirectionX = function()
+{
+	return direction_target_x;	
+}
+
+GetDirectionY = function()
+{
+	return direction_target_y;	
+}
+
 MoveHorizontally = function(var_moveH)
 {
 	moveH = var_moveH;
