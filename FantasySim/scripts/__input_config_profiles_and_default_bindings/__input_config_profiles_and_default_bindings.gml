@@ -19,7 +19,8 @@ INPUT_DEFAULT_PROFILES = {
         right: [input_binding_key(vk_right), input_binding_key("D")],
         
         accept:  input_binding_key(vk_space),
-        cancel:  input_binding_key(vk_backspace),
+        cancel:  input_binding_key(vk_escape),
+		action2:  input_binding_key(vk_backspace),
         action:  input_binding_key(vk_control),
         special: input_binding_key(vk_shift),
         
@@ -37,7 +38,8 @@ INPUT_DEFAULT_PROFILES = {
         right: [input_binding_gamepad_axis(gp_axislh, false), input_binding_gamepad_button(gp_padr)],
         
         accept:  input_binding_gamepad_button(gp_face1),
-        cancel:  input_binding_gamepad_button(gp_face2),
+        cancel:  input_binding_gamepad_button(gp_select),
+		action2:  input_binding_gamepad_button(gp_face2),
         action:  input_binding_gamepad_button(gp_face3),
         special: input_binding_gamepad_button(gp_face4),
         

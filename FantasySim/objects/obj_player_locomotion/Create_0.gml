@@ -133,3 +133,11 @@ AddImpulse = function(var_xSpeed, var_ySpeed)
 	AddXImpulse(var_xSpeed);
 	AddYImpulse(var_ySpeed);
 }
+
+AddImpulseTowardsPoint = function(var_directionX, var_directionY, var_speed)
+{
+	var xSpeed = sign(var_directionX - x) * var_speed;
+	var ySpeed = sign(var_directionY - y) * var_speed;
+	
+	AddImpulse(xSpeed, ySpeed);
+}

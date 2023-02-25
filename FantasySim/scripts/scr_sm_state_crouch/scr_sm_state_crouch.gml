@@ -5,6 +5,6 @@ function scr_sm_state_crouch(){
 		{ locomotion_manager.SetMaxSpeed(locomotion_manager.crouchSpeed); }
 	scr_basic_movement_input();
 	if (!input_check("action", parent_manager_id.player_number-1)) { state = STATES.RUN; }
-	if (input_check("cancel", parent_manager_id.player_number-1)) { state = STATES.DODGE; }
+	if (input_check("action2", parent_manager_id.player_number-1)) { state = STATES.DODGE; }
 	scr_change_collision_sprite(locomotion_manager, locomotion_manager.spr_col_crouch);
 }
