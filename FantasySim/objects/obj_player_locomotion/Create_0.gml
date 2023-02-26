@@ -48,6 +48,26 @@ spr_collision = spr_col_stand;
 state_machine_manager = undefined;
 
 	//Methods
+GetMoveX = function()
+{
+	return moveH;	
+}
+
+GetMoveY = function()
+{
+	return moveV;	
+}
+
+GetSpeedX = function()
+{
+	return xSpeed;	
+}
+
+GetSpeedY = function()
+{
+	return ySpeed;	
+}
+
 GetDirectionX = function()
 {
 	return direction_target_x;	
@@ -134,10 +154,86 @@ AddImpulse = function(var_xSpeed, var_ySpeed)
 	AddYImpulse(var_ySpeed);
 }
 
-AddImpulseTowardsPoint = function(var_directionX, var_directionY, var_speed)
+AddProportionalImpulseTowardsPointRelativeToPlayer = function(var_pointX, var_pointY, var_speed)
+{
+	var xSpeed = 0;
+	var ySpeed = 0;
+	var absolute_pointX = abs(var_pointX-x);
+	var absolute_pointY = abs(var_pointY-y);
+	
+	if (absolute_pointX > absolute_pointY)
+	{
+		xSpeed = sign(var_pointX)*var_speed;
+		ySpeed = ((absolute_pointY / absolute_pointX)*var_speed)*sign(var_pointY);
+	} 
+	else if (absolute_pointX < absolute_pointY)
+	{
+		xSpeed = ((absolute_pointX / absolute_pointY)*var_speed)*sign(var_pointX);
+		ySpeed = sign(var_pointY)*var_speed;
+	}
+	else if (absolute_pointX == absolute_pointY)
+	{
+		xSpeed = sign(var_pointX)*var_speed;
+		ySpeed = sign(var_pointY)*var_speed;
+	}
+	
+	AddImpulse(xSpeed, ySpeed);
+}
+
+AddProportionalImpulseAwayFromPointRelativeToPlayer = function(var_pointX, var_pointY, var_speed)
+{
+	var xSpeed = 0;
+	var ySpeed = 0;
+	var absolute_pointX = abs(var_pointX-x);
+	var absolute_pointY = abs(var_pointY-y);
+	
+	if (absolute_pointX > absolute_pointY)
+	{
+		xSpeed = sign(var_pointX)*var_speed;
+		ySpeed = ((absolute_pointY / absolute_pointX)*var_speed)*sign(var_pointY);
+	} 
+	else if (absolute_pointX < absolute_pointY)
+	{
+		xSpeed = ((absolute_pointX / absolute_pointY)*var_speed)*sign(var_pointX);
+		ySpeed = sign(var_pointY)*var_speed;
+	}
+	else if (absolute_pointX == absolute_pointY)
+	{
+		xSpeed = sign(var_pointX)*var_speed;
+		ySpeed = sign(var_pointY)*var_speed;
+	}
+	
+	AddImpulse(-xSpeed, -ySpeed);
+}
+
+AddLinearImpulseTowardsPointRelativeToPlayer = function(var_directionX, var_directionY, var_speed)
 {
 	var xSpeed = sign(var_directionX - x) * var_speed;
 	var ySpeed = sign(var_directionY - y) * var_speed;
 	
 	AddImpulse(xSpeed, ySpeed);
+}
+
+AddLinearImpulseAwayFromPointRelativeToPlayer = function(var_directionX, var_directionY, var_speed)
+{
+	var xSpeed = sign(var_directionX - x) * var_speed;
+	var ySpeed = sign(var_directionY - y) * var_speed;
+	
+	AddImpulse(-xSpeed, -ySpeed);
+}
+
+AddLinearImpulseTowardsPoint = function(var_directionX, var_directionY, var_speed)
+{
+	var xSpeed = sign(var_directionX) * var_speed;
+	var ySpeed = sign(var_directionY) * var_speed;
+	
+	AddImpulse(xSpeed, ySpeed);
+}
+
+AddLinearImpulseAwayFromPoint = function(var_directionX, var_directionY, var_speed)
+{
+	var xSpeed = sign(var_directionX) * var_speed;
+	var ySpeed = sign(var_directionY) * var_speed;
+	
+	AddImpulse(-xSpeed, -ySpeed);
 }

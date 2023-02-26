@@ -1,31 +1,25 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_sm_state_dodge(){
-	var dodge_started = false;
-	var dodge_completed = false;
-	var dodge_starting_impulse_x = locomotion_manager.GetXImpulse();
-	var dodge_starting_impulse_y = locomotion_manager.GetYImpulse();
 	var dodge_speed = 8;
 	
 	scr_change_collision_sprite(locomotion_manager, locomotion_manager.spr_col_dash);
 	
-	if (!dodge_started and !dodge_completed)
+	if (state_previous_frame != state)
 	{
-		locomotion_manager.AddImpulseTowardsPoint(locomotion_manager.GetDirectionX(), locomotion_manager.GetDirectionY(), dodge_speed);
-		dodge_started = true;
-	}
-	
-	if (dodge_started and !dodge_completed)
-	{
-		if ((abs(locomotion_manager.GetXImpulse()) <= abs(dodge_starting_impulse_x))
-				and (abs(locomotion_manager.GetYImpulse()) <= abs(dodge_starting_impulse_y)))
+		//locomotion_manager.AddImpulseTowardsPoint(locomotion_manager.GetDirectionX(), locomotion_manager.GetDirectionY(), dodge_speed); //Using Mouse Direction
+		if (locomotion_manager.GetMoveX()==0 and locomotion_manager.GetMoveY()==0)
 		{
-			dodge_completed = true;
+			locomotion_manager.AddLinearImpulseAwayFromPointRelativeToPlayer(locomotion_manager.GetDirectionX(), locomotion_manager.GetDirectionY(), dodge_speed);
+		}
+		else
+		{
+			locomotion_manager.AddLinearImpulseTowardsPoint(locomotion_manager.GetMoveX(), locomotion_manager.GetMoveY(), dodge_speed);
 		}
 	}
 	
-	if (dodge_started and dodge_completed)
+	if (locomotion_manager.GetXImpulse() == 0 and locomotion_manager.GetYImpulse() == 0 and state_previous_frame == STATES.DODGE)
 	{
-		state = STATES.IDLE;
+		state = STATES.RUN;
 	}
 }
