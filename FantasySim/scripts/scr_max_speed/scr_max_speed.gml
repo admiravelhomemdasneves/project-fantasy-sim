@@ -6,12 +6,12 @@ function scr_max_speed(instance_locomotion_id){
 	var yImpulse = instance_locomotion_id.yImpulse;
 	var maxSpeed = instance_locomotion_id.maxSpeed;
 	
-	if (abs(xSpeed) > maxSpeed + xImpulse)
+	if (abs(xSpeed) > maxSpeed + abs(xImpulse))
 	{
-		instance_locomotion_id.xSpeed = (maxSpeed + xImpulse) * sign(xSpeed);	
+		instance_locomotion_id.xSpeed = (maxSpeed + abs(xImpulse)) * sign(xSpeed);	
 	}
-	if (abs(ySpeed) > maxSpeed + yImpulse)
+	if (abs(ySpeed) > maxSpeed + abs(yImpulse))
 	{
-		instance_locomotion_id.ySpeed = (maxSpeed + yImpulse) * sign(ySpeed);	
+		instance_locomotion_id.ySpeed = (maxSpeed + abs(yImpulse)) * sign(ySpeed);	
 	}
 }
