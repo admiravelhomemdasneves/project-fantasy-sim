@@ -4,7 +4,7 @@
 //Check every frame to see if we've got enough players to start gameplay
 if (input_multiplayer_is_finished())
 {
-    if (input_check_long("action", 0) || input_check_long("action", 1))
+    if (input_check_long("button_select", 0) || input_check_long("button_select", 1))
     {
         input_source_mode_set(INPUT_SOURCE_MODE.FIXED);
     }
