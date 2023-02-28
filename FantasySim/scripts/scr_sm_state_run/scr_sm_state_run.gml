@@ -4,9 +4,9 @@ function scr_sm_state_run(){
 	if (locomotion_manager.GetMaxSpeed() != locomotion_manager.walkingSpeed)
 		{ locomotion_manager.SetMaxSpeed(locomotion_manager.walkingSpeed); }
 	scr_basic_movement_input();
-	if (input_check("special", parent_manager_id.player_number-1)) { state = STATES.SPRINT; }
-	if (input_check("action", parent_manager_id.player_number-1)) { state = STATES.CROUCH; }
-	if (input_check("action2", parent_manager_id.player_number-1)) { state = STATES.DODGE; }
+	if (input_check("button_left_stick_press", parent_manager_id.player_number-1)) { state = STATES.SPRINT; }
+	if (input_check("button_dpad_down", parent_manager_id.player_number-1)) { state = STATES.CROUCH; }
+	if (input_check("button_b", parent_manager_id.player_number-1)) { state = STATES.DODGE; }
 	if (locomotion_manager.moveH == 0 and locomotion_manager.moveV == 0) { state = STATES.IDLE; }
 	scr_change_collision_sprite(locomotion_manager, locomotion_manager.spr_col_stand);
 }
