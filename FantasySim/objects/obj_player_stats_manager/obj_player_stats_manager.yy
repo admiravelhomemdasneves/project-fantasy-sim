@@ -1,17 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_playerOLD",
+  "name": "obj_player_stats_manager",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "PlayerOLD",
-    "path": "folders/Objects/PlayerOLD.yy",
+    "name": "Player",
+    "path": "folders/Objects/Player.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -27,12 +26,11 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"parent_manager_id","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"-1","varType":1,},
+  ],
   "solid": false,
-  "spriteId": {
-    "name": "spr_col_player_stand",
-    "path": "sprites/spr_col_player_stand/spr_col_player_stand.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

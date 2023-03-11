@@ -3,7 +3,6 @@
 
 scr_actions_library();
 if (instance_exists(parent_manager_id)) { locomotion_manager = parent_manager_id.Get_Locomotion_Manager(); }
-if (instance_exists(parent_manager_id)) { action_manager = parent_manager_id.Get_Action_Manager(); }
 
 switch (state)
 {

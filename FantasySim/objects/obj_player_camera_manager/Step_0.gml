@@ -1,6 +1,6 @@
 /// @description Cameras
 
-var number_of_cameras = instance_number(obj_player_camera);
+var number_of_cameras = instance_number(obj_player_camera_manager);
 	
 	//Camera: Mode Detection
 if (number_of_cameras > 1)

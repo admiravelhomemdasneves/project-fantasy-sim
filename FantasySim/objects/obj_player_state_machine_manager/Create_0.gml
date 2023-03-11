@@ -6,4 +6,3 @@ state_change_aux = state; //auxiliary variable to help calculate previous states
 state_previous = state;
 state_previous_frame = state_previous;
 locomotion_manager = -1;
-action_manager = -1;
