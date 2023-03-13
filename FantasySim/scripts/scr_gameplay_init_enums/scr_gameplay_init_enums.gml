@@ -3,11 +3,12 @@
 function scr_gameplay_init_enums(){
 	//State Machine
 	enum STATES {
-		IDLE = 0,
-		RUN = 1,
-		SPRINT = 2,
-		CROUCH = 3,
-		DODGE = 4
+		IDLE,
+		RUN,
+		SPRINT,
+		CROUCH,
+		DODGE,
+		ATTACK
 	}
 	
 	enum CAMERA {

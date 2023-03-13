@@ -3,6 +3,7 @@
 
 scr_actions_library();
 if (instance_exists(parent_manager_id)) { locomotion_manager = parent_manager_id.Get_Locomotion_Manager(); }
+if (instance_exists(parent_manager_id)) { combat_manager = parent_manager_id.Get_Combat_Manager(); }
 
 switch (state)
 {
@@ -26,6 +27,10 @@ switch (state)
 		scr_sm_state_dodge();
 	break;
 
+	case STATES.ATTACK:
+		scr_sm_state_attack();
+	break;
+	
 	default:
 		scr_sm_state_idle();
 	break;

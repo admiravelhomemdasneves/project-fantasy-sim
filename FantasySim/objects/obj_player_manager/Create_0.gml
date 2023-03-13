@@ -36,3 +36,8 @@ Get_Camera_Manager = function()
 {
 	return camera_manager;	
 }
+
+Get_Combat_Manager = function()
+{
+	return combat_manager;	
+}
