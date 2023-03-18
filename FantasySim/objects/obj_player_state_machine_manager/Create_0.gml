@@ -7,3 +7,4 @@ state_previous = state;
 state_previous_frame = state_previous;
 locomotion_manager = -1;
 combat_manager = -1;
+state_reset_alarm = 0; //Id of the alarm that resets 'state' to STATES.IDLE

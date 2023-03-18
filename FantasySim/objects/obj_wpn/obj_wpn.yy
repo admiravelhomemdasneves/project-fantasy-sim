@@ -1,18 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_atk_unnarmed_simpleAttack",
-  "eventList": [],
+  "name": "obj_wpn",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Attacks",
-    "path": "folders/Objects/Systems/Combat System/Attacks.yy",
+    "name": "Models",
+    "path": "folders/Objects/Systems/Combat System/Models.yy",
   },
-  "parentObjectId": {
-    "name": "obj_atk",
-    "path": "objects/obj_atk/obj_atk.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_col_player_crouch",
-    "path": "sprites/spr_col_player_crouch/spr_col_player_crouch.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

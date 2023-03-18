@@ -17,4 +17,20 @@ function scr_gameplay_init_enums(){
 		DEFAULT_WIDTH = 1366,
 		DEFAULT_HEIGHT = 768
 	}
+	
+	enum ATTACK_LIFETYPE {
+		TIMED,
+		DESTROY_ONLY_ON_CONTACT
+	}
+	
+	enum ATTACK_GEOMETRY {
+		SQUARE,
+		CIRCLE
+	}
+	
+	enum ATTACK_LOCOMOTION {
+		IDLE,
+		PROJECTILE,
+		TARGET_FOLLOWER
+	}
 }
