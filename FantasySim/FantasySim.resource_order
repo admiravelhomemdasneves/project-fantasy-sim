@@ -51,11 +51,11 @@
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
+    {"name":"Basic Attacks Collisions","order":7,"path":"folders/Sprites/Basic Attacks Collisions.yy",},
     {"name":"Objects Sprites","order":4,"path":"folders/Sprites/Objects Sprites.yy",},
     {"name":"Player Collisions","order":1,"path":"folders/Sprites/Player Collisions.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Basic Attacks Collisions","order":7,"path":"folders/Sprites/Basic Attacks Collisions.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_player_stats_manager","order":6,"path":"objects/obj_player_stats_manager/obj_player_stats_manager.yy",},
