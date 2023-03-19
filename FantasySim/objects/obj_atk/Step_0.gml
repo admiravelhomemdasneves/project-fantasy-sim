@@ -48,7 +48,7 @@ switch(life_type)
 		}
 	break;
 	
-	case ATTACK_LIFETYPE.DESTROY_ON_CONTACT:
+	case ATTACK_LIFETYPE.DESTROY_ONLY_ON_CONTACT:
 	
 	break;
 	
