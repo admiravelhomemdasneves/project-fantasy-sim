@@ -6,4 +6,7 @@ function scr_sm_state_idle(){
 	if (input_check("button_b", parent_manager_id.player_number-1)) { state = STATES.DODGE; }
 	if (locomotion_manager.moveH != 0 or locomotion_manager.moveV != 0) { state = STATES.RUN; }
 	scr_change_collision_sprite(locomotion_manager, locomotion_manager.spr_col_stand);
+	
+	//Testing
+	if (input_check("button_right_bumper", parent_manager_id.player_number-1)) { state = STATES.ATTACK; }
 }
