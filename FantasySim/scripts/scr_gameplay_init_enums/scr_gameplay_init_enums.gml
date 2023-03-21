@@ -8,7 +8,8 @@ function scr_gameplay_init_enums(){
 		SPRINT,
 		CROUCH,
 		DODGE,
-		ATTACK
+		ATTACK,
+		HURT
 	}
 	
 	enum CAMERA {

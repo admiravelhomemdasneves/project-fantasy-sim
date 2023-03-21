@@ -8,6 +8,8 @@ parent_directionX_atStart = parent_locomotion.GetDirectionX();
 parent_directionY_atStart = parent_locomotion.GetDirectionY();
 
 //VARIABLES FOR INTERNAL PROCEDURES
+self_hurt = false;
+
 life_type = ATTACK_LIFETYPE.TIMED;
 life_time = 90;
 dead = false;
@@ -20,3 +22,12 @@ attack_geometry_height = 0.5; //Works as percentage - 0.5 meaning half of the or
 attack_locomotion_type = ATTACK_LOCOMOTION.PROJECTILE;
 attack_locomotion_direction = point_direction(x, y, parent_directionX_atStart, parent_directionY_atStart);
 attack_locomotion_speed = 6;
+
+attack_damage = 1;
+attack_damage_output = attack_damage * parent_manager_id.Get_Combat_Manager().equipped_weapon.GetDamageMultiplier();
+
+//Methods
+GetAttackDamageOutput = function()
+{
+	return attack_damage_output;
+}
