@@ -9,6 +9,7 @@ parent_directionY_atStart = parent_locomotion.GetDirectionY();
 
 //VARIABLES FOR INTERNAL PROCEDURES
 self_hurt = false;
+destroy_on_contact = true;
 
 life_type = ATTACK_LIFETYPE.TIMED;
 life_time = 90;
