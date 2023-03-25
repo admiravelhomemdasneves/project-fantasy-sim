@@ -284,6 +284,7 @@
     {"id":{"name":"__input_gamepad_set_type","path":"scripts/__input_gamepad_set_type/__input_gamepad_set_type.yy",},"order":14,},
     {"id":{"name":"input_cursor_limit_get","path":"scripts/input_cursor_limit_get/input_cursor_limit_get.yy",},"order":7,},
     {"id":{"name":"__input_exception_handler","path":"scripts/__input_exception_handler/__input_exception_handler.yy",},"order":5,},
+    {"id":{"name":"scr_sm_state_hurt","path":"scripts/scr_sm_state_hurt/scr_sm_state_hurt.yy",},"order":6,},
     {"id":{"name":"input_binding_scan_clear_params","path":"scripts/input_binding_scan_clear_params/input_binding_scan_clear_params.yy",},"order":8,},
     {"id":{"name":"__input_validate_macros","path":"scripts/__input_validate_macros/__input_validate_macros.yy",},"order":40,},
     {"id":{"name":"input_source_share","path":"scripts/input_source_share/input_source_share.yy",},"order":9,},

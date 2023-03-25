@@ -41,3 +41,8 @@ Get_Combat_Manager = function()
 {
 	return combat_manager;	
 }
+
+Get_Stats_Manager = function()
+{
+	return player_stats_manager;	
+}
