@@ -19,8 +19,8 @@ if (grabbed and rooted)
 else
 if (grabbed and !rooted)
 {
-	//xSpeed = obj_playerOLD.xSpeed;
-	//ySpeed = obj_playerOLD.ySpeed;
+	xSpeed = obj_playerOLD.xSpeed;
+	ySpeed = obj_playerOLD.ySpeed;
 }
 
 if (!grabbed and !throwed)

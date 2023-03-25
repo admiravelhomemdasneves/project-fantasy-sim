@@ -4,7 +4,6 @@
 draw_self();
 
 //DEBUG
-/*
 if (distance_to_object(obj_playerOLD)<60)
 {
 	draw_set_color(c_red);
@@ -14,4 +13,3 @@ if (distance_to_object(obj_playerOLD)<60)
 	draw_text(x,y+40,"unrootingProcess: " + string(unrootingProcess));
 	draw_text(x,y+52,"unrootingTarget: " + string(unrootingTarget));
 }
-*/

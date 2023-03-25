@@ -3,13 +3,11 @@
 function scr_gameplay_init_enums(){
 	//State Machine
 	enum STATES {
-		IDLE,
-		RUN,
-		SPRINT,
-		CROUCH,
-		DODGE,
-		ATTACK,
-		HURT
+		IDLE = 0,
+		RUN = 1,
+		SPRINT = 2,
+		CROUCH = 3,
+		DODGE = 4
 	}
 	
 	enum CAMERA {
@@ -17,21 +15,5 @@ function scr_gameplay_init_enums(){
 		MODE_MULTIPLAYER,
 		DEFAULT_WIDTH = 1366,
 		DEFAULT_HEIGHT = 768
-	}
-	
-	enum ATTACK_LIFETYPE {
-		TIMED,
-		DESTROY_ONLY_ON_CONTACT
-	}
-	
-	enum ATTACK_GEOMETRY {
-		SQUARE,
-		CIRCLE
-	}
-	
-	enum ATTACK_LOCOMOTION {
-		IDLE,
-		PROJECTILE,
-		TARGET_FOLLOWER
 	}
 }
