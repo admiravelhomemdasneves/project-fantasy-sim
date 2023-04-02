@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "State Machine",
-    "path": "folders/Scripts/State Machine.yy",
+    "name": "State Scripts",
+    "path": "folders/Scripts/State Machine/State Scripts.yy",
   },
 }
