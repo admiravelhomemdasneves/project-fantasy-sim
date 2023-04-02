@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_sm_state_run",
+  "name": "scr_state_flow_to_idle",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "State Scripts",
-    "path": "folders/Scripts/State Machine/State Scripts.yy",
+    "name": "State Flows",
+    "path": "folders/Scripts/State Machine/State Flows.yy",
   },
 }
