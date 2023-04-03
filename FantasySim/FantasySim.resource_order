@@ -47,6 +47,8 @@
     {"name":"Notification System","order":8,"path":"folders/Scripts/Notification System.yy",},
     {"name":"Player Input","order":10,"path":"folders/Scripts/Player Input.yy",},
     {"name":"State Machine","order":11,"path":"folders/Scripts/State Machine.yy",},
+    {"name":"State Flows","order":8,"path":"folders/Scripts/State Machine/State Flows.yy",},
+    {"name":"State Scripts","order":7,"path":"folders/Scripts/State Machine/State Scripts.yy",},
     {"name":"Sequences","order":11,"path":"folders/Sequences.yy",},
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
@@ -56,8 +58,6 @@
     {"name":"Player Collisions","order":1,"path":"folders/Sprites/Player Collisions.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"State Scripts","order":7,"path":"folders/Scripts/State Machine/State Scripts.yy",},
-    {"name":"State Flows","order":8,"path":"folders/Scripts/State Machine/State Flows.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_player_stats_manager","order":6,"path":"objects/obj_player_stats_manager/obj_player_stats_manager.yy",},
