@@ -46,3 +46,8 @@ Get_Stats_Manager = function()
 {
 	return player_stats_manager;	
 }
+
+Get_Animation_Manager = function()
+{
+	return animation_manager;	
+}

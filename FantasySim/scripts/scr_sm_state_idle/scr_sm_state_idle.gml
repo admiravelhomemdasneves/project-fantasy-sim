@@ -15,4 +15,5 @@ function scr_sm_state_idle(){
 	
 	//STATE IDLE ANIMATIONS AND COLLISIONS
 	scr_change_collision_sprite(locomotion_manager, locomotion_manager.spr_col_stand);
+	animation_manager.ChangeAnimation(spr_plr_anm_idle, 0.5);
 }
