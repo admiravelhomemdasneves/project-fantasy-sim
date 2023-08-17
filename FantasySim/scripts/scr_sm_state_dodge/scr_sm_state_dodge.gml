@@ -12,4 +12,5 @@ function scr_sm_state_dodge(){
 	
 	//STATE DODGE ANIMATIONS AND COLLISIONS
 	scr_change_collision_sprite(locomotion_manager, locomotion_manager.spr_col_dash);
+	animation_manager.ChangeAnimation(spr_plr_anm_roll, 0.5);
 }

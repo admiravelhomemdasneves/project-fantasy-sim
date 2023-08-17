@@ -6,6 +6,7 @@ scr_actions_library();
 if (instance_exists(parent_manager_id)) { locomotion_manager = parent_manager_id.Get_Locomotion_Manager(); }
 if (instance_exists(parent_manager_id)) { combat_manager = parent_manager_id.Get_Combat_Manager(); }
 if (instance_exists(parent_manager_id)) { stats_manager = parent_manager_id.Get_Stats_Manager(); }
+if (instance_exists(parent_manager_id)) { animation_manager = parent_manager_id.Get_Animation_Manager(); }
 
 switch (state)
 {

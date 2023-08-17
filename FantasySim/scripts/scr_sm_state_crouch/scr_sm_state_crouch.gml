@@ -14,4 +14,5 @@ function scr_sm_state_crouch(){
 	
 	//STATE CROUCH ANIMATIONS AND COLLISIONS
 	scr_change_collision_sprite(locomotion_manager, locomotion_manager.spr_col_crouch);
+	animation_manager.ChangeAnimation(spr_plr_anm_crouch, 0.5);
 }

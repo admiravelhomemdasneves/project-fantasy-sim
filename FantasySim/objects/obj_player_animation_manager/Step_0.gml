@@ -8,7 +8,7 @@ if (instance_exists(parent_manager_id)) { state_machine_manager = parent_manager
 if (instance_exists(locomotion_manager))
 {
 	x = locomotion_manager.x;
-	y = locomotion_manager.y
+	y = locomotion_manager.y;
 }
 
 if (locomotion_manager.moveH != 0) {sprite_direction = locomotion_manager.moveH;}
