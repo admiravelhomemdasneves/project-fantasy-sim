@@ -1,16 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_player_stats_manager",
-  "spriteId": null,
+  "name": "obj_locomotion_manager",
+  "spriteId": {
+    "name": "spr_col_player_stand",
+    "path": "sprites/spr_col_player_stand/spr_col_player_stand.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_stats_manager",
-    "path": "objects/obj_stats_manager/obj_stats_manager.yy",
+    "name": "obj_collision_mask",
+    "path": "objects/obj_collision_mask/obj_collision_mask.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -25,6 +28,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [
@@ -32,7 +37,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Player",
-    "path": "folders/Objects/Entities/Player.yy",
+    "name": "Models",
+    "path": "folders/Objects/Entities/Models.yy",
   },
 }

@@ -89,7 +89,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player Test Animations",
-    "path": "folders/Sprites/Player Test Animations.yy",
+    "name": "Player Animations",
+    "path": "folders/Sprites/Player Animations.yy",
   },
 }

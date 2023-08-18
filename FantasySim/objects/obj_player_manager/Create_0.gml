@@ -1,9 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-struct_manager_id = {
-	parent_manager_id : id
-}
+event_inherited();
 
 player_number = instance_number(obj_player_manager);
 manager_id = "Player"+string(player_number);
@@ -15,39 +13,3 @@ animation_manager = instance_create_depth(x, y, 0, obj_player_animation_manager,
 combat_manager = instance_create_depth(x, y, 0, obj_player_combat_manager, struct_manager_id);
 
 delete struct_manager_id;
-
-//Methods
-Get_Locomotion_Manager = function()
-{
-	return locomotion_manager;	
-}
-
-Get_Input_Manager = function()
-{
-	return input_manager;	
-}
-
-Get_State_Machine_Manager = function()
-{
-	return state_machine_manager;	
-}
-
-Get_Camera_Manager = function()
-{
-	return camera_manager;	
-}
-
-Get_Combat_Manager = function()
-{
-	return combat_manager;	
-}
-
-Get_Stats_Manager = function()
-{
-	return player_stats_manager;	
-}
-
-Get_Animation_Manager = function()
-{
-	return animation_manager;	
-}

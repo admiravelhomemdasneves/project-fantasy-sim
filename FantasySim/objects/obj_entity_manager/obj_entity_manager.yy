@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_collision_mask",
-  "spriteId": {
-    "name": "spr_col_player_crouch",
-    "path": "sprites/spr_col_player_crouch/spr_col_player_crouch.yy",
-  },
+  "name": "obj_entity_manager",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -24,11 +21,13 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Collision System",
-    "path": "folders/Objects/Systems/Collision System.yy",
+    "name": "Models",
+    "path": "folders/Objects/Entities/Models.yy",
   },
 }
