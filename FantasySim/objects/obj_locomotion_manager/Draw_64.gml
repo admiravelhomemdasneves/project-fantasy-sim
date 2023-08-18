@@ -1,5 +1,6 @@
 /// @description DEBUG PURPOSES
 
+/*
 var spacing = 16;
 var shadow_spacing = 2;
 var x_anchor = 16;
@@ -16,3 +17,4 @@ for (i=0; i<array_length(strings); i++)
 	draw_set_color(c_orange);
 	draw_text(x_anchor, y_anchor + (spacing*i), strings[i] + string(variables[i]));
 }
+*/

@@ -1,4 +1,6 @@
 /// @description DEBUG
+
+/*
 draw_text(16, 32, "Camera mode: " + string(camera_mode));
 draw_set_color(c_aqua);
 
@@ -11,3 +13,4 @@ for (i=0;i<8;i++)
 		view_port_height-i, 
 		true);
 }
+*/
