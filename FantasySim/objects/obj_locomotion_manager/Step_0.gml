@@ -1,11 +1,21 @@
-/// @description Player Update Code
+/// @description Update Code
 
 scr_calculate_speed(id);
 scr_max_speed(id);
-scr_collision_checking();
+if (collision_on) { scr_collision_checking(); }
 scr_locomotion_direction();
 
-sprite_index = spr_collision;
+if (collision_on)
+{
+	if (spr_collision != -1)
+	{
+		sprite_index = spr_collision;
+	}
+}
+else
+{
+	sprite_index = -1;
+}
 
 //FOR DEBUG PURPOSES
 depth = -y+10;

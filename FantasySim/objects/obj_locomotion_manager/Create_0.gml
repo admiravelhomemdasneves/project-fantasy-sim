@@ -1,5 +1,11 @@
 /// @description Data Initialization
 
+if (parent_manager_id != -1)
+{
+	x = parent_manager_id.x;
+	y = parent_manager_id.y;
+}
+
 	//Movement Speed
 maxSpeed = 0;
 
@@ -31,7 +37,7 @@ arrow_x = x + lengthdir_x(arrowDistanceToPlayer, arrow_rot);
 arrow_y = y + lengthdir_y(arrowDistanceToPlayer,arrow_rot);
 
 	//Collision Sprites
-spr_collision = undefined;
+//spr_collision = -1;	-> SET IN VARIABLE DEFINITIONS
 
 	//Managers
 state_machine_manager = undefined;

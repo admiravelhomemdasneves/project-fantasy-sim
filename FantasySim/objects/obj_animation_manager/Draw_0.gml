@@ -4,4 +4,7 @@
 depth = -y;
 image_xscale = sprite_direction;
 
-draw_self();
+if (sprite_index != -1)
+{
+	draw_self();
+}

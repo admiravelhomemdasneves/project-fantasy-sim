@@ -8,7 +8,7 @@ struct_manager_id = {
 locomotion_manager = undefined;
 state_machine_manager = undefined;
 camera_manager = undefined;
-player_stats_manager = undefined;
+stats_manager = undefined;
 animation_manager = undefined;
 combat_manager = undefined;
 
@@ -42,7 +42,7 @@ Get_Combat_Manager = function()
 
 Get_Stats_Manager = function()
 {
-	return player_stats_manager;	
+	return stats_manager;	
 }
 
 Get_Animation_Manager = function()
