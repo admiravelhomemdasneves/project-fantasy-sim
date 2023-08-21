@@ -1,10 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-struct_manager_id = {
-	parent_manager_id : id
-}
-
 locomotion_manager = undefined;
 state_machine_manager = undefined;
 camera_manager = undefined;
