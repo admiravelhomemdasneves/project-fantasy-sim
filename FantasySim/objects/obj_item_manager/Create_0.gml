@@ -8,12 +8,18 @@ sprite_index = -1;
 
 struct_locomotion = { parent_manager_id : id, collision_on : v_collision_on };
 struct_animation = { parent_manager_id : id, spr_animation : v_spr_animation };
+struct_stats = { parent_manager_id : id, max_health_points : v_max_health_points };
+struct_state_machine = { parent_manager_id : id, states_function : v_states_function };
 
 locomotion_manager = instance_create_depth(0, 0, 0, obj_locomotion_manager, struct_locomotion);
 animation_manager = instance_create_depth(0, 0, 0, obj_animation_manager, struct_animation);
+stats_manager = instance_create_depth(0, 0, 0, obj_stats_manager, struct_stats);
+state_machine_manager = instance_create_depth(0, 0, 0, obj_state_machine_manager, struct_state_machine);
 
 delete struct_locomotion;
 delete struct_animation;
+delete struct_stats;
+delete struct_state_machine;
 
 /*	LIST OF MANAGERS FOR REFERENCE
 locomotion_manager = undefined;

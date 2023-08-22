@@ -1,16 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_player_stats_manager",
-  "spriteId": null,
+  "name": "obj_item_wood",
+  "spriteId": {
+    "name": "spr_wood",
+    "path": "sprites/spr_wood/spr_wood.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_stats_manager",
-    "path": "objects/obj_stats_manager/obj_stats_manager.yy",
+    "name": "obj_item_manager",
+    "path": "objects/obj_item_manager/obj_item_manager.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -25,15 +28,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"parent_manager_id","varType":1,"value":"-1","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
-  ],
+  "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Player",
-    "path": "folders/Objects/Entities/Player.yy",
+    "name": "Items",
+    "path": "folders/Objects/Entities/Items.yy",
   },
 }
