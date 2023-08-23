@@ -6,7 +6,8 @@ event_inherited();
 //For Room Editor Diplay Purposes there's a sprite atributed to this object but we later want to remove it
 sprite_index = -1;
 
-struct_locomotion = { parent_manager_id : id, collision_on : v_collision_on };
+entity_type = ENTITY.ITEM;
+struct_locomotion = { parent_manager_id : id, collision_on : v_collision_on, spr_collision : v_spr_collision };
 struct_animation = { parent_manager_id : id, spr_animation : v_spr_animation };
 struct_stats = { parent_manager_id : id, max_health_points : v_max_health_points };
 struct_state_machine = { parent_manager_id : id, states_function : v_states_function };

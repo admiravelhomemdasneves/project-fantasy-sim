@@ -7,6 +7,7 @@ struct_manager_id = {
 	parent_manager_id : id
 }
 
+entity_type = ENTITY.PLAYER;
 player_number = instance_number(obj_player_manager);
 manager_id = "Player"+string(player_number);
 locomotion_manager = instance_create_depth(x, y, 0, obj_player_locomotion_manager, struct_manager_id);
