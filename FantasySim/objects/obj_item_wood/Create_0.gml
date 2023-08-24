@@ -10,6 +10,8 @@ v_spr_animation = spr_wood;
 
 	/*STATS MANAGER VARIABLES*/
 v_max_health_points = 5;
+v_death_on = true;
+v_destroy_on_death = true;
 
 	/*STATE MACHINE MANAGER VARIABLES */
 v_states_function = function()

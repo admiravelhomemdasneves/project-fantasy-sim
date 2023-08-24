@@ -45,3 +45,17 @@ Get_Animation_Manager = function()
 {
 	return animation_manager;	
 }
+
+Destroy_Entity = function()
+{
+	if (entity_type != ENTITY.PLAYER)
+	{
+		if (instance_exists(locomotion_manager)) { instance_destroy(locomotion_manager); }
+		if (instance_exists(state_machine_manager)) { instance_destroy(state_machine_manager); }
+		if (instance_exists(camera_manager)) { instance_destroy(camera_manager); }
+		if (instance_exists(stats_manager)) { instance_destroy(stats_manager); }
+		if (instance_exists(animation_manager)) { instance_destroy(animation_manager); }
+		if (instance_exists(combat_manager)) { instance_destroy(combat_manager); }
+		instance_destroy(id);
+	}
+}

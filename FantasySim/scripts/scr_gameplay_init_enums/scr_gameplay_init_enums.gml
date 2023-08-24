@@ -38,4 +38,8 @@ function scr_gameplay_init_enums(){
 		PROJECTILE,
 		TARGET_FOLLOWER
 	}
+	
+	enum STATUS {
+		DEATH	
+	}
 }
