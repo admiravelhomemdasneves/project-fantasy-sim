@@ -7,11 +7,33 @@ event_inherited();
 sprite_index = -1;
 
 entity_type = ENTITY.ITEM;
-struct_locomotion = { parent_manager_id : id, collision_on : v_collision_on, spr_collision : v_spr_collision };
-struct_animation = { parent_manager_id : id, spr_animation : v_spr_animation };
-struct_stats = { parent_manager_id : id, max_health_points : v_max_health_points , death_on : v_death_on, destroy_on_death : v_destroy_on_death };
-struct_state_machine = { parent_manager_id : id, states_function : v_states_function };
 
+	/*STRUCTS*/
+struct_locomotion = { 
+	parent_manager_id : id, 
+	collision_on : v_collision_on, 
+	spr_collision : v_spr_collision 
+};
+
+struct_animation = { 
+	parent_manager_id : id, 
+	spr_animation : v_spr_animation 
+};
+
+struct_stats = { 
+	parent_manager_id : id, 
+	max_health_points : v_max_health_points , 
+	death_on : v_death_on, 
+	destroy_on_death : v_destroy_on_death,
+	item_drop : v_item_drop
+};
+
+struct_state_machine = { 
+	parent_manager_id : id, 
+	states_function : v_states_function 
+};
+
+	/*MANAGERS*/
 locomotion_manager = instance_create_depth(0, 0, 0, obj_locomotion_manager, struct_locomotion);
 animation_manager = instance_create_depth(0, 0, 0, obj_animation_manager, struct_animation);
 stats_manager = instance_create_depth(0, 0, 0, obj_stats_manager, struct_stats);

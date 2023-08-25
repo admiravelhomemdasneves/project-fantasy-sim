@@ -12,11 +12,11 @@ v_spr_animation = spr_wood;
 v_max_health_points = 5;
 v_death_on = true;
 v_destroy_on_death = true;
+v_item_drop = scr_create_item_drop_array(obj_item_rock_tiny, 3, obj_item_wood, 2);
 
 	/*STATE MACHINE MANAGER VARIABLES */
 v_states_function = function()
 {
-	//if (instance_exists(other.parent_manager_id)) { other.parent_manager_id.locomotion_manager.x += 10; }
 	with (other)
 	{
 		switch (state)
