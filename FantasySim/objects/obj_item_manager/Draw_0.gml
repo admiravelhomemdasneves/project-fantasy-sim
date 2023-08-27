@@ -9,8 +9,7 @@ draw_text(x, y+38, "v_states_function : " + string(v_states_function));
 draw_text(x, y+48, "locomotion collision_on : " + string(locomotion_manager.collision_on));
 */
 
-draw_set_color(c_black);
-
+//draw_set_color(c_black);
 //if (instance_exists(stats_manager)) { draw_text(x, y+8, "hp : " + string(stats_manager.health_points)); }
 
 if (sprite_index != -1) { draw_self(); }

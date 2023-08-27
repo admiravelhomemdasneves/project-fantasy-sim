@@ -12,7 +12,9 @@ entity_type = ENTITY.ITEM;
 struct_locomotion = { 
 	parent_manager_id : id, 
 	collision_on : v_collision_on, 
-	spr_collision : v_spr_collision 
+	spr_collision : v_spr_collision,
+	spr_collision_width : v_spr_collision_width,
+	spr_collision_height : v_spr_collision_height
 };
 
 struct_animation = { 

@@ -10,6 +10,8 @@ if (collision_on)
 	if (spr_collision != -1)
 	{
 		sprite_index = spr_collision;
+		if (spr_collision_width != -1) { image_xscale = spr_collision_width; }
+		if (spr_collision_height != -1) { image_yscale = spr_collision_height; }
 	}
 }
 else
