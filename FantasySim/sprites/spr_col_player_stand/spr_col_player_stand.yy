@@ -68,6 +68,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Player Collisions",
-    "path": "folders/Sprites/Player Collisions.yy",
+    "path": "folders/Sprites/Player/Player Collisions.yy",
   },
 }

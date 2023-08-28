@@ -1,11 +1,32 @@
-/// @description Player Update Code
+/// @description Update Code
 
 scr_calculate_speed(id);
 scr_max_speed(id);
-scr_collision_checking();
+if (collision_on) { scr_collision_checking(); }
 scr_locomotion_direction();
 
-sprite_index = spr_collision;
+if (collision_on)
+{
+	if (typeof(spr_collision) == "array") 
+		{ sprite_index = spr_collision[spr_collision_orientation]; }
+	else
+		{ sprite_index = spr_collision; }
+	
+	if (spr_collision_orientation == -1)
+	{
+		if (spr_collision_width != -1) { image_xscale = spr_collision_width; }
+		if (spr_collision_height != -1) { image_yscale = spr_collision_height; }
+	}
+	else
+	{
+		if (typeof(spr_collision_width) == "array") { image_xscale = spr_collision_width[spr_collision_orientation]; }
+		if (typeof(spr_collision_height) == "array") { image_yscale = spr_collision_height[spr_collision_orientation]; }
+	}
+}
+else
+{
+	sprite_index = -1;
+}
 
 //FOR DEBUG PURPOSES
 depth = -y+10;

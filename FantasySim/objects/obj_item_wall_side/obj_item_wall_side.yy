@@ -1,16 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_object",
-  "spriteId": null,
+  "name": "obj_item_wall_side",
+  "spriteId": {
+    "name": "spr_wall_side",
+    "path": "sprites/spr_wall_side/spr_wall_side.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_collision_mask",
-    "path": "objects/obj_collision_mask/obj_collision_mask.yy",
+    "name": "obj_item_wall",
+    "path": "objects/obj_item_wall/obj_item_wall.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -32,7 +35,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects/Entities/Objects.yy",
+    "name": "Walls",
+    "path": "folders/Objects/Entities/Items/Walls.yy",
   },
 }

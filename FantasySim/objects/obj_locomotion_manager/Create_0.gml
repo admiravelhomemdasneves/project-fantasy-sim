@@ -1,5 +1,11 @@
 /// @description Data Initialization
 
+if (parent_manager_id != -1)
+{
+	x = parent_manager_id.x;
+	y = parent_manager_id.y;
+}
+
 	//Movement Speed
 maxSpeed = 0;
 
@@ -25,18 +31,41 @@ direction_target_x = 0;
 direction_target_y = 0;
 direction_target_max_distance = 128;
 input_distance_radius = 128;
-arrowDistanceToPlayer = 32;
+arrowDistanceToPlayer = 16;
 arrow_rot = point_direction(x,y,x+direction_target_x,y+direction_target_y);
 arrow_x = x + lengthdir_x(arrowDistanceToPlayer, arrow_rot);
 arrow_y = y + lengthdir_y(arrowDistanceToPlayer,arrow_rot);
 
 	//Collision Sprites
-spr_collision = undefined;
+//spr_collision = -1;	-> SET IN VARIABLE DEFINITIONS
+if (spr_collision_orientation == -1)
+{
+	if (spr_collision_width != -1) { image_xscale = spr_collision_width; }
+	if (spr_collision_height != -1) { image_yscale = spr_collision_height; }
+}
+else
+{
+	if (typeof(spr_collision) == "array") { sprite_index = spr_collision[spr_collision_orientation]; }
+	if (typeof(spr_collision_width) == "array") { image_xscale = spr_collision_width[spr_collision_orientation]; }
+	if (typeof(spr_collision_height) == "array") { image_yscale = spr_collision_height[spr_collision_orientation]; }
+}
 
 	//Managers
 state_machine_manager = undefined;
 
 	//Methods
+GetItemTag = function()
+{
+	if (instance_exists(parent_manager_id))
+	{
+		return parent_manager_id.item_tag;	
+	}
+	else
+	{
+		return -1;	
+	}
+}
+
 GetMoveX = function()
 {
 	return moveH;	

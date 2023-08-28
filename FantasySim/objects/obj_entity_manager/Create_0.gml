@@ -1,20 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-struct_manager_id = {
-	parent_manager_id : id
-}
-
 locomotion_manager = undefined;
 state_machine_manager = undefined;
 camera_manager = undefined;
-player_stats_manager = undefined;
+stats_manager = undefined;
 animation_manager = undefined;
 combat_manager = undefined;
 
 //delete struct_manager_id; SHOULD BE APPLIED IN CHILD OBJECT
 
 //Methods
+Get_Item_Tag = function()
+{
+	return item_tag;	
+}
+
 Get_Locomotion_Manager = function()
 {
 	return locomotion_manager;	
@@ -42,10 +43,24 @@ Get_Combat_Manager = function()
 
 Get_Stats_Manager = function()
 {
-	return player_stats_manager;	
+	return stats_manager;	
 }
 
 Get_Animation_Manager = function()
 {
 	return animation_manager;	
+}
+
+Destroy_Entity = function()
+{
+	if (entity_type != ENTITY.PLAYER)
+	{
+		if (instance_exists(locomotion_manager)) { instance_destroy(locomotion_manager); }
+		if (instance_exists(state_machine_manager)) { instance_destroy(state_machine_manager); }
+		if (instance_exists(camera_manager)) { instance_destroy(camera_manager); }
+		if (instance_exists(stats_manager)) { instance_destroy(stats_manager); }
+		if (instance_exists(animation_manager)) { instance_destroy(animation_manager); }
+		if (instance_exists(combat_manager)) { instance_destroy(combat_manager); }
+		instance_destroy(id);
+	}
 }

@@ -1,7 +1,11 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_gameplay_init_enums(){
-	//State Machine
+	enum ENTITY {
+		PLAYER,
+		ITEM
+	}
+	
 	enum STATES {
 		IDLE,
 		RUN,
@@ -33,5 +37,18 @@ function scr_gameplay_init_enums(){
 		IDLE,
 		PROJECTILE,
 		TARGET_FOLLOWER
+	}
+	
+	enum STATUS {
+		DEATH	
+	}
+	
+	enum COLLISION_ORIENTATION {
+		FRONT = 0,
+		SIDE = 1
+	}
+	
+	enum ITEM_TAG {
+		WALL	
 	}
 }

@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_box",
+  "name": "obj_item_tree",
   "spriteId": {
-    "name": "spr_object_box",
-    "path": "sprites/spr_object_box/spr_object_box.yy",
+    "name": "spr_tree",
+    "path": "sprites/spr_tree/spr_tree.yy",
   },
   "solid": false,
   "visible": true,
@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_object",
-    "path": "objects/obj_object/obj_object.yy",
+    "name": "obj_item_manager",
+    "path": "objects/obj_item_manager/obj_item_manager.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects/Entities/Objects.yy",
+    "name": "Items",
+    "path": "folders/Objects/Entities/Items.yy",
   },
 }

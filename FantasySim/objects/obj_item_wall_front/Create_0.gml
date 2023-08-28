@@ -1,8 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-event_inherited();
+v_spr_collision_orientation = COLLISION_ORIENTATION.FRONT;
 
-weight = 5;
-grabbable = true;
-rooted = true;
+event_inherited();

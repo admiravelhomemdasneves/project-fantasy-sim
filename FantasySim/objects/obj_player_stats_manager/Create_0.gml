@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-event_inherited();
+max_health_points = 100;
 
-weight = 0.2;
-grabbable = true;
+event_inherited();

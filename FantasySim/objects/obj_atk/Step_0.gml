@@ -4,6 +4,7 @@
 //Geometry
 image_xscale = attack_geometry_width;
 image_yscale = attack_geometry_height;
+
 switch(attack_geometry_sprite)
 {
 	case ATTACK_GEOMETRY.SQUARE:

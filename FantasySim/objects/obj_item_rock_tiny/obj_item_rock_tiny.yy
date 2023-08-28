@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bush",
+  "name": "obj_item_rock_tiny",
   "spriteId": {
-    "name": "spr_bush",
-    "path": "sprites/spr_bush/spr_bush.yy",
+    "name": "spr_rock_tiny",
+    "path": "sprites/spr_rock_tiny/spr_rock_tiny.yy",
   },
   "solid": false,
   "visible": true,
@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_object",
-    "path": "objects/obj_object/obj_object.yy",
+    "name": "obj_item_manager",
+    "path": "objects/obj_item_manager/obj_item_manager.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects/Entities/Objects.yy",
+    "name": "Items",
+    "path": "folders/Objects/Entities/Items.yy",
   },
 }
