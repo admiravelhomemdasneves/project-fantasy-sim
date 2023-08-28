@@ -11,6 +11,11 @@ combat_manager = undefined;
 //delete struct_manager_id; SHOULD BE APPLIED IN CHILD OBJECT
 
 //Methods
+Get_Item_Tag = function()
+{
+	return item_tag;	
+}
+
 Get_Locomotion_Manager = function()
 {
 	return locomotion_manager;	

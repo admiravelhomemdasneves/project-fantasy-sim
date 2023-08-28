@@ -14,7 +14,8 @@ struct_locomotion = {
 	collision_on : v_collision_on, 
 	spr_collision : v_spr_collision,
 	spr_collision_width : v_spr_collision_width,
-	spr_collision_height : v_spr_collision_height
+	spr_collision_height : v_spr_collision_height,
+	spr_collision_orientation : v_spr_collision_orientation
 };
 
 struct_animation = { 

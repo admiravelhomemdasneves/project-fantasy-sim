@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_item_manager",
-    "path": "objects/obj_item_manager/obj_item_manager.yy",
+    "name": "obj_item_wall",
+    "path": "objects/obj_item_wall/obj_item_wall.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Items",
-    "path": "folders/Objects/Entities/Items.yy",
+    "name": "Walls",
+    "path": "folders/Objects/Entities/Items/Walls.yy",
   },
 }

@@ -42,4 +42,13 @@ function scr_gameplay_init_enums(){
 	enum STATUS {
 		DEATH	
 	}
+	
+	enum COLLISION_ORIENTATION {
+		FRONT = 0,
+		SIDE = 1
+	}
+	
+	enum ITEM_TAG {
+		WALL	
+	}
 }

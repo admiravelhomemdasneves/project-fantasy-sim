@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_item_wall_side",
+  "name": "obj_item_wall",
   "spriteId": {
-    "name": "spr_wall_side",
-    "path": "sprites/spr_wall_side/spr_wall_side.yy",
+    "name": "spr_wall_front",
+    "path": "sprites/spr_wall_front/spr_wall_front.yy",
   },
   "solid": false,
   "visible": true,
@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_item_wall",
-    "path": "objects/obj_item_wall/obj_item_wall.yy",
+    "name": "obj_item_manager",
+    "path": "objects/obj_item_manager/obj_item_manager.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -30,7 +30,6 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],

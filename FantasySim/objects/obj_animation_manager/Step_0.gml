@@ -20,7 +20,17 @@ if (instance_exists(parent_manager_id))
 	//Sprite
 if (spr_animation != -1)
 {
-	sprite_index = spr_animation;	
+	if (typeof(spr_animation) == "array")
+	{
+		if (locomotion_manager != undefined)
+		{
+			sprite_index = spr_animation[locomotion_manager.spr_collision_orientation];
+		}
+	}
+	else
+	{
+		sprite_index = spr_animation;
+	}
 }
 
 	//Movement and Sprite Direction

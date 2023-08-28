@@ -38,13 +38,34 @@ arrow_y = y + lengthdir_y(arrowDistanceToPlayer,arrow_rot);
 
 	//Collision Sprites
 //spr_collision = -1;	-> SET IN VARIABLE DEFINITIONS
-if (spr_collision_width != -1) { image_xscale = spr_collision_width; }
-if (spr_collision_height != -1) { image_yscale = spr_collision_height; }
+if (spr_collision_orientation == -1)
+{
+	if (spr_collision_width != -1) { image_xscale = spr_collision_width; }
+	if (spr_collision_height != -1) { image_yscale = spr_collision_height; }
+}
+else
+{
+	if (typeof(spr_collision) == "array") { sprite_index = spr_collision[spr_collision_orientation]; }
+	if (typeof(spr_collision_width) == "array") { image_xscale = spr_collision_width[spr_collision_orientation]; }
+	if (typeof(spr_collision_height) == "array") { image_yscale = spr_collision_height[spr_collision_orientation]; }
+}
 
 	//Managers
 state_machine_manager = undefined;
 
 	//Methods
+GetItemTag = function()
+{
+	if (instance_exists(parent_manager_id))
+	{
+		return parent_manager_id.item_tag;	
+	}
+	else
+	{
+		return -1;	
+	}
+}
+
 GetMoveX = function()
 {
 	return moveH;	
