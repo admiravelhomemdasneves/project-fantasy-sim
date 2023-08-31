@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Notifications",
-    "path": "folders/Objects/Systems/Notifications.yy",
+    "path": "folders/Objects/UI Systems/Notifications.yy",
   },
   "parentObjectId": null,
   "persistent": false,

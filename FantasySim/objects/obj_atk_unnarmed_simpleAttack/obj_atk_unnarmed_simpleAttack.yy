@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Attacks",
-    "path": "folders/Objects/Systems/Combat System/Attacks.yy",
+    "path": "folders/Objects/Game Systems/Combat System/Attacks.yy",
   },
   "parentObjectId": {
     "name": "obj_atk",

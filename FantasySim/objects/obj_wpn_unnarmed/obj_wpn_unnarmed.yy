@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Weapons",
-    "path": "folders/Objects/Systems/Combat System/Weapons.yy",
+    "path": "folders/Objects/Game Systems/Combat System/Weapons.yy",
   },
   "parentObjectId": {
     "name": "obj_wpn",

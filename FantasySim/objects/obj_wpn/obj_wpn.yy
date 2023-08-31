@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Models",
-    "path": "folders/Objects/Systems/Combat System/Models.yy",
+    "path": "folders/Objects/Game Systems/Combat System/Models.yy",
   },
   "parentObjectId": null,
   "persistent": false,
