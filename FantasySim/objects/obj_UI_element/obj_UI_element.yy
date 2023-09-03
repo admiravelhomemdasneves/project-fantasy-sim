@@ -27,6 +27,10 @@
   "physicsStartAwake": true,
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"UI_tag","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"-1","varType":1,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"UI_element_x","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"-1","varType":1,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"UI_element_y","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"-1","varType":1,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"UI_element_width","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"-1","varType":1,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"UI_element_height","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"-1","varType":1,},
   ],
   "solid": false,
   "spriteId": null,

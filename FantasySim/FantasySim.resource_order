@@ -41,6 +41,8 @@
     {"name":"Models","order":2,"path":"folders/Objects/Game Systems/Combat System/Models.yy",},
     {"name":"Weapons","order":1,"path":"folders/Objects/Game Systems/Combat System/Weapons.yy",},
     {"name":"Input System","order":1,"path":"folders/Objects/Game Systems/Input System.yy",},
+    {"name":"UI Systems","order":8,"path":"folders/Objects/UI Systems.yy",},
+    {"name":"Models","order":1,"path":"folders/Objects/UI Systems/Models.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
@@ -64,8 +66,6 @@
     {"name":"Test Sprites","order":1,"path":"folders/Sprites/Utils/Test Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"UI Systems","order":8,"path":"folders/Objects/UI Systems.yy",},
-    {"name":"Models","order":1,"path":"folders/Objects/UI Systems/Models.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_player_stats_manager","order":6,"path":"objects/obj_player_stats_manager/obj_player_stats_manager.yy",},
