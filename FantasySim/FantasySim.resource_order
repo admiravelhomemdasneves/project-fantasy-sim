@@ -359,7 +359,6 @@
     {"name":"input_source_using","order":10,"path":"scripts/input_source_using/input_source_using.yy",},
     {"name":"input_vibrate_curve","order":2,"path":"scripts/input_vibrate_curve/input_vibrate_curve.yy",},
     {"name":"input_check_double_released","order":3,"path":"scripts/input_check_double_released/input_check_double_released.yy",},
-    {"name":"obj_UI_healthbar","order":1,"path":"objects/obj_UI_healthbar/obj_UI_healthbar.yy",},
     {"name":"input_cursor_x","order":15,"path":"scripts/input_cursor_x/input_cursor_x.yy",},
     {"name":"__input_class_verb_state","order":16,"path":"scripts/__input_class_verb_state/__input_class_verb_state.yy",},
     {"name":"input_mouse_check_pressed","order":3,"path":"scripts/input_mouse_check_pressed/input_mouse_check_pressed.yy",},

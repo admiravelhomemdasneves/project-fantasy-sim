@@ -435,7 +435,6 @@
     {"id":{"name":"input_source_using","path":"scripts/input_source_using/input_source_using.yy",},"order":10,},
     {"id":{"name":"input_vibrate_curve","path":"scripts/input_vibrate_curve/input_vibrate_curve.yy",},"order":2,},
     {"id":{"name":"input_check_double_released","path":"scripts/input_check_double_released/input_check_double_released.yy",},"order":3,},
-    {"id":{"name":"obj_UI_healthbar","path":"objects/obj_UI_healthbar/obj_UI_healthbar.yy",},"order":1,},
     {"id":{"name":"input_cursor_x","path":"scripts/input_cursor_x/input_cursor_x.yy",},"order":15,},
     {"id":{"name":"__input_class_verb_state","path":"scripts/__input_class_verb_state/__input_class_verb_state.yy",},"order":16,},
     {"id":{"name":"input_mouse_check_pressed","path":"scripts/input_mouse_check_pressed/input_mouse_check_pressed.yy",},"order":3,},
